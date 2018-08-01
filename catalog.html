@@ -10,7 +10,7 @@
 
 <body class = "inner-page">
     <header class="main-header">
-        <nav class="main-navigation">
+        <nav class="main-navigation container">
             <a class="main-header-logo" href="index.html">
                 <img src="img/logo.svg" width="111" height="24" alt="Логотип барбершопа «Бородинский»">
             </a>
@@ -48,13 +48,14 @@
             </li>
             <li class="breadcrumbs-current">Средства для ухода</li>
         </ul>
+        <div class = "catalog-columns">
         <section class="filters">
-            <h2 class="visually-hidden">Фильтр товаров</h2>
+            <h2  hidden>Фильтр товаров</h2>
             <form class="filter" method="get" action="https://echo.htmlacademy.ru">
              <fieldset>
             	<legend>
             		<p>Производители:</p></legend>
-            			<ul>
+            			<ul class = "first-filter">
             				<li class="filter-option"> 
             					<label for=filter-baxter-of-california">
         <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="baxter-of-california" id="filter-baxter-of-california"
@@ -84,7 +85,7 @@
 
             <fieldset>
             	<legend>Группы товаров</legend>
-            	<ul>
+            	<ul class = "second-filter">
  					<li class="filter-option">
  						<label for="filter-shave">
                             <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="shaving" id="filter-shave">
@@ -230,8 +231,10 @@
                 </li>
             </ul>
         </section>
+    </div>
     </main>
     <footer class="main-footer">
+        <div class = "container">
         <p class="footer-contacts">
             Барбершоп «Бородинский»
             <br> Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8
@@ -257,6 +260,7 @@
             <b>Разработано:</b>
             <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
         </p>
+    </div>
     </footer>
 
      <section class="modal modal-login">
