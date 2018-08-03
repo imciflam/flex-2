@@ -401,7 +401,7 @@ a {
 {
   margin-top: 10px;
 }
-
+ 
 .breadcrumbs
 {
   display: flex;
@@ -767,4 +767,26 @@ align-content: center;
 .social-button:focus path
 {
   fill:#000000;
+}
+
+
+.catalog-item-price 
+{
+  display: flex;  
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.catalog-item-price  b,
+.catalog-item-price a
+{
+  padding-top:10px;
+  padding-bottom:10px;
+  padding-left:20px;
+   padding-right:20px;
+  margin-left:10px;
+}
+.catalog-item-price a
+{
+  margin-top:-10px;
 }
